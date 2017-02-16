@@ -1,0 +1,4 @@
+# General conveniences
+alias ls='ls -Gh'
+alias ll='ls -alh'
+alias simpleserver='python -m SimpleHTTPServer 8000'

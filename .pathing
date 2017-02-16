@@ -1,0 +1,5 @@
+# custom pathing
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/Cellar/ruby/2.2.3:$PATH
+export PATH=/usr/local/terraform/bin:$PATH
+export GOPATH=/Users/mmarsh/Projects/libsauceconnect/.go

@@ -1,4 +1,4 @@
-DOTFILES=$HOME/Projects/dotfiles
+DOTFILES=$HOME/dotfiles
 
 # User configuration:
 # source custom pathing, aliases, and secrets

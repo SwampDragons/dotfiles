@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/mmarsh/.oh-my-zsh
 # set all other needed pathing
-DOTFILES=$HOME/Projects/dotfiles
+DOTFILES=$HOME/dotfiles
 source $DOTFILES/.pathing
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -25,12 +25,6 @@ CASE_SENSITIVE="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source $DOTFILES.aliases
-source $DOTFILES.work_aliases
+source $DOTFILES/.aliases
 
-# startup virtualenv-burrito
-if [ -f $HOME/.venvburrito/startup.sh ]; then
-    . $HOME/.venvburrito/startup.sh
-fi
-
-source $DOTFILES.secrets
+# source $DOTFILES/.secrets

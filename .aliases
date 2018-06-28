@@ -2,3 +2,7 @@
 alias ls='ls -Gh'
 alias ll='ls -alh'
 alias simpleserver='python -m SimpleHTTPServer 8000'
+alias cdpacker='cd ~/go/src/github.com/hashicorp/packer'
+alias buildwindows='cdpacker && XC_ARCH=amd64 XC_OS=windows ./scripts/build.sh && cd pkg/windows_amd64 && zip packer.zip packer.exe'
+alias buildmac='cdpacker && XC_ARCH=amd64 XC_OS=darwin ./scripts/build.sh && cd pkg/windows_amd64 && zip packer.zip packer'
+alias buildlinux='cdpacker && XC_ARCH=amd64 XC_OS=linux ./scripts/build.sh && cd pkg/windows_amd64 && zip packer.zip packer'

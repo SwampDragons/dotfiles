@@ -26,5 +26,14 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES/.aliases
+source $DOTFILES/.work-env
 
 # source $DOTFILES/.secrets
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mmarsh/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/mmarsh/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mmarsh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/mmarsh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+autoload -U +X bashcompinit && bashcompinit
